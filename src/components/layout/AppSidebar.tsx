@@ -25,8 +25,9 @@ import {
   UserCog,
   Wrench
 } from 'lucide-react';
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import front from "././../../../public/imagelogo.jpg"
 const AppSidebar = () => {
   const { isAdmin, user } = useAuth();
   const location = useLocation();
@@ -49,7 +50,7 @@ const AppSidebar = () => {
     <div className="h-full flex flex-col app-sidebar">
       {/* Logo */}
       <div className="p-4 flex justify-center">
-        <img src="/cirelli-logo.svg" alt="Cirelli Motor Company Logo" className="h-10" />
+        <img src={front} alt="Cirelli Motor Company Logo" className="h-10" />
       </div>
 
       {/* Navigation Links */}
